@@ -10,7 +10,7 @@
 </head>
 
 <body class="text-black">
-  <nav class="d-flex justify-content-between w-100 ps-5 pe-5">
+  <nav class="d-flex justify-content-between align-items-center w-100 ps-5 pe-5">
     <img src="public/img/logo.png" alt="logo">
     <div class="d-flex gap-5">
       <div>Home</div>
@@ -25,7 +25,7 @@
       </button>
     </div>
   </nav>
-  <header class="d-flex justify-content-center pt-5">
+  <header class="d-flex justify-content-center align-items-center pt-5">
     <div class="w-25">
       <h1 class="fw-bolder display-1">Ice</h1>
       <h1 class="fw-bolder display-1">Cream</h1>
@@ -33,10 +33,10 @@
         of a page when looking at its layout. The point of using Lorem</p>
       <button class="btn-outline-primary bg-primary text-white border-0 p-3 order-now">Order Now</button>
     </div>
-    <img src="public/img/banner-img.png" class="big-ice-cream" alt="bigIcecream">
+    <img src="public/img/banner-img.png" class="big-ice-cream img-fluid" alt="bigIcecream">
   </header>
   <section id="aboutIceCream" class="d-flex justify-content-center align-items-center">
-    <img src="public/img/about-img.png" class="" alt="">
+    <img src="public/img/about-img.png" class="img-fluid" alt="">
     <div class="w-25">
       <div>
         <h1 class="fw-bolder display-5">About Icecream</h1>
@@ -101,32 +101,43 @@
       <h1 class="fw-bolder">Testimonials</h1>
     </div>
     <div>
-      <div class="container-fluid d-flex justify-content-center ">
+      <div class="container-fluid d-flex justify-content-center w-100" style="position: relative">
+        <div class="right-button btn-outline-primary"
+          style="width: 9rem ; position: absolute; top: 4rem; left: 78%; z-index: 2;">
+          <button class="bg-primary border-0 p-3">&gt;</button>
+        </div>
+        <div class="left-button" style="width: 9rem ; position: absolute; top: 4rem; right: 73%; z-index: 2;">
+          <button class="bg-primary border-0 p-3">&lt;</button>
+        </div>
         <div class="card d-flex p-5" style="width: 60%; ;">
 
-          <div class="card-body d-flex justify-content-center align-items-center flex-column " style="position: relative">
+          <div class="card-body d-flex justify-content-center align-items-center flex-column active">
             <div>
-            <div class="left-button" style="width: 9rem ; position: absolute; top: 100px; right: 85%">
-              <button>left</button></div>
-            <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta
-              fugiat, modi accusantium necessitatibus facilis ipsa laudantium nihil. Veniam vero facere blanditiis
-              beatae, quod omnis deserunt quas numquam nam est.</p>
-            <div class="right-button" style="width: 9rem ; position: absolute; top: 100px; left: 98%;">
-              <button>right</button></div>
+
+              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta
+                fugiat, modi accusantium necessitatibus facilis ipsa laudantium nihil. Veniam vero facere blanditiis
+                beatae, quod omnis deserunt quas numquam nam est.</p>
+
             </div>
             <h5 class="card-title text-center">Marie Fen</h5>
-            <img src="public/img/client-img.png" alt="" style="width: 9rem ; position: absolute; top: 12rem;">
+            <img src="public/img/client-img.png" alt="" style="width: 9rem ; position: absolute; top: 10rem;">
 
           </div>
 
         </div>
+        
 
 
       </div>
     </div>
   </section>
-  <footer>
-
+  <footer class="bg-dark text-white">
+    <div class="display-5 d-flex">
+      <div class="d-flex flex-column m-0">
+        Contact Us
+        <hr class="m-0">
+      </div>
+    </div>
   </footer>
   <script src="public/js/main.js"></script>
 </body>

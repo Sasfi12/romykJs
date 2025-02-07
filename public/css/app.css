@@ -11884,8 +11884,7 @@ nav > div {
 
 .big-ice-cream {
   padding-left: 5rem;
-  width: 500px;
-  heigth: 100px;
+  width: 40%;
   animation: up-down infinite alternate 2s;
 }
 
