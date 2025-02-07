@@ -6,6 +6,9 @@ darkMode.addEventListener("click", function() {
     allBody.classList.toggle("bg-dark")
     allBody.classList.toggle("text-white")
     allInsideBody.forEach(function(e) {
+        if(!e.classList("bg-primary")) {
         e.classList.toggle("bg-dark")
+        }
     })
+    
 })
