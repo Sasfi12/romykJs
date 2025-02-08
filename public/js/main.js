@@ -1,14 +1,19 @@
 // darkMode 
-let darkMode = document.querySelector("#darkMode")
+let darkMode = document.querySelector("#darkMode");
 let allInsideBody = document.body.querySelectorAll("*");
 let allBody = document.querySelector("body");
-darkMode.addEventListener("click", function() {
-    allBody.classList.toggle("bg-dark")
-    allBody.classList.toggle("text-white")
+function darkmodetoggle() {
+    allBody.classList.toggle("bg-dark");
+    allBody.classList.toggle("text-white");
     allInsideBody.forEach(function(e) {
         if(!e.classList("bg-primary")) {
-        e.classList.toggle("bg-dark")
+        e.classList.toggle("bg-dark");
         }
     })
-    
-})
+}
+darkMode.addEventListener("click", darkmodetoggle);
+
+// modal 
+let loginButton = document.querySelector("#loginButton");
+loginButton.addEventListener("click" ,function() {alert("open modal")})
+//carousel 

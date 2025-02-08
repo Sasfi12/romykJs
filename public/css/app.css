@@ -11900,4 +11900,12 @@ nav > div {
   top: 9.3rem;
 }
 
+#testimonials .container-fluid > .card, #testimonials .container-sm > .card, #testimonials .container-md > .card, #testimonials .container-lg > .card, #testimonials .container-xl > .card, #testimonials .container-xxl > .card {
+  box-shadow: 0 0 10px beige;
+}
+
+.card.inactive {
+  display: none !important;
+}
+
 /*# sourceMappingURL=app.css.map */
