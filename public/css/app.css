@@ -11886,6 +11886,7 @@ nav > div {
   padding-left: 5rem;
   width: 40%;
   animation: up-down infinite alternate 2s;
+  transition: 2s;
 }
 
 @keyframes up-down {
@@ -11896,16 +11897,64 @@ nav > div {
     transform: translateY(0px);
   }
 }
+@media (max-width: 960px) {
+  header {
+    display: revert;
+    flex-direction: column-reverse;
+  }
+  header .decription {
+    width: 75% !important;
+    text-align: center;
+  }
+  header .decription p {
+    text-align: center !important;
+  }
+  header .big-ice-cream {
+    width: auto;
+  }
+}
+@media (max-width: 960px) {
+  #aboutIceCream {
+    display: revert;
+    flex-direction: column;
+  }
+  #aboutIceCream .decription {
+    width: 75% !important;
+    text-align: center;
+  }
+  #aboutIceCream .decription p {
+    text-align: center !important;
+  }
+  #aboutIceCream .big-ice-cream {
+    width: auto;
+  }
+}
 .conteneur-prix-carte {
   top: 9.3rem;
 }
 
+#testimonials {
+  margin-bottom: 10rem;
+}
 #testimonials .container-fluid > .card, #testimonials .container-sm > .card, #testimonials .container-md > .card, #testimonials .container-lg > .card, #testimonials .container-xl > .card, #testimonials .container-xxl > .card {
   box-shadow: 0 0 10px beige;
 }
 
 .card.inactive {
   display: none !important;
+}
+
+#testimonials .container-fluid, #testimonials .container-sm, #testimonials .container-md, #testimonials .container-lg, #testimonials .container-xl, #testimonials .container-xxl {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 75%;
+  overflow: hidden;
+}
+#testimonials .container-fluid .card, #testimonials .container-sm .card, #testimonials .container-md .card, #testimonials .container-lg .card, #testimonials .container-xl .card, #testimonials .container-xxl .card {
+  min-width: 50%;
+  max-width: 50%;
 }
 
 /*# sourceMappingURL=app.css.map */

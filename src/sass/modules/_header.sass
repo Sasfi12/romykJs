@@ -1,7 +1,11 @@
+header 
+    
+
 .big-ice-cream 
     padding-left: 5rem
     width: 40%
     animation: up-down infinite alternate 2s
+    transition: 2s
 
 @keyframes up-down 
     from 
@@ -9,3 +13,15 @@
     
     to 
         transform: translateY(0px) 
+@media (max-width: 960px) 
+    header 
+        display: revert
+        flex-direction: column-reverse
+        .decription 
+            width: 75% !important
+            text-align: center
+            p 
+                text-align: center !important
+            
+        .big-ice-cream
+            width: auto
