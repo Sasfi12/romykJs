@@ -3,28 +3,42 @@ nav
     border-bottom: solid 4px pink  
     padding-top: 2rem !important 
     width: 90%
-    overflow: hidden
+    position: relative
 #bourgir 
     display: none 
     flex-direction: column
     gap: 5px
     cursor: pointer 
-    z-index: 2
+    z-index: 10
     span 
         border: solid   
         width: 25px
 #burgeredPart 
-    display: flex 
+    display: flex
+    justify-content: space-between
+    padding-left: 10%
 // class for when the burger is clicked 
 .burger-content 
+    background-color: $primary
+    justify-content: center
+    z-index: 5
     display: flex !important 
     flex-direction: column 
-    align-items: flex-end
+    align-items: center
     gap: 2rem
-    background-color: $primary
+    right: 10px
+    transition: 2s
+    bottom: 4rem
     position: absolute 
+    animation: navbarIncoming 0.5s forwards
+    *
+        background-color: $primary 
     .nav-elements 
         flex-direction: column 
+        > div 
+            display: flex 
+            justify-content: center
+            cursor: pointer 
     .logos 
         gap: 2rem
         width: auto 
@@ -35,3 +49,8 @@ nav
     #bourgir
         display: flex !important
     
+@keyframes navbarIncoming 
+    from 
+        transform: translateY(0px)
+    to 
+        transform: translateY(27rem)
