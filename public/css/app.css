@@ -11885,15 +11885,37 @@ nav {
   flex-direction: column;
   gap: 5px;
   cursor: pointer;
+  z-index: 2;
 }
 #bourgir span {
   border: solid;
   width: 25px;
 }
 
+#burgeredPart {
+  display: flex;
+}
+
+.burger-content {
+  display: flex !important;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2rem;
+  background-color: #ED84B1;
+  position: absolute;
+}
+.burger-content .nav-elements {
+  flex-direction: column;
+}
+.burger-content .logos {
+  gap: 2rem;
+  width: auto;
+  flex-direction: column;
+}
+
 @media (max-width: 850px) {
-  .burgered-part {
-    display: none !important;
+  #burgeredPart {
+    display: none;
   }
   #bourgir {
     display: flex !important;

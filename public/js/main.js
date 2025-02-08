@@ -19,7 +19,8 @@ loginButton.addEventListener("click" ,function() {alert("open modal")})
 //carousel 
 
 // burgerMenu 
-let burgerMenu = document.querySelector("#bourgir")
+let burgerMenu = document.querySelector("#bourgir");
+let burgeredPart = document.querySelector("#burgeredPart");
 burgerMenu.addEventListener("click", function() {
-    alert('burger menu displayed')
+    burgeredPart.classList.toggle("burger-content")
 })

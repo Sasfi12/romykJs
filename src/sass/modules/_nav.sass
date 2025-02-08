@@ -9,12 +9,29 @@ nav
     flex-direction: column
     gap: 5px
     cursor: pointer 
+    z-index: 2
     span 
         border: solid   
         width: 25px
+#burgeredPart 
+    display: flex 
+// class for when the burger is clicked 
+.burger-content 
+    display: flex !important 
+    flex-direction: column 
+    align-items: flex-end
+    gap: 2rem
+    background-color: $primary
+    position: absolute 
+    .nav-elements 
+        flex-direction: column 
+    .logos 
+        gap: 2rem
+        width: auto 
+        flex-direction: column 
 @media (max-width: 850px) 
-    .burgered-part
-        display: none !important 
+    #burgeredPart
+        display: none
     #bourgir
         display: flex !important
     
