@@ -11897,6 +11897,9 @@ nav {
   justify-content: space-between;
   padding-left: 10%;
 }
+#burgeredPart .logos button {
+  background-color: inherit !important;
+}
 
 .burger-content {
   background-color: #ED84B1;
@@ -12022,6 +12025,10 @@ header {
 #testimonials .container-fluid .card, #testimonials .container-sm .card, #testimonials .container-md .card, #testimonials .container-lg .card, #testimonials .container-xl .card, #testimonials .container-xxl .card {
   min-width: 50%;
   max-width: 50%;
+}
+
+.show-modal {
+  display: revert !important;
 }
 
 /*# sourceMappingURL=app.css.map */

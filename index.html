@@ -23,16 +23,46 @@
         <div>Blog</div>
       </div>
       <div class="logos d-flex justify-content-start">
-        <button class="border-0" id="loginButton">Login <i class="bi bi-person-fill"></i></button><button class="border-0" id="darkMode"><i
+        <button class="border-0 btn-outline-primary" id="loginButton">Login <i
+            class="bi bi-person-fill"></i></button><button class="border-0 btn-outline-primary" id="darkMode"><i
             class="bi bi-moon-fill"></i>
         </button>
       </div>
-      
+
     </div>
     <div id="bourgir">
       <span></span><span></span><span></span>
     </div>
   </nav>
+  <div id="Login" class="d-none modal-inactive bg-dark d-flex justify-content-center flex-column text-white align-items-center">
+    <div class="close-button "><button class="modalCloseButton">Close<i></i></button></div>
+    <form action="login" class="">
+      <h2>Login</h2>
+      <hr>
+      <div class="login-inputs d-flex flex-column">
+        <input type="text" placeholder="NAME">
+        <input type="text" placeholder="EMAIL">
+      </div>
+      <button>SEND</button>
+      <p class="registerOption">No account yet ? Register</p>
+    </form>
+  </div>
+  <div id="Register" class="d-none bg-dark d-flex justify-content-center flex-column text-white align-items-center">
+    <div class="close-button "><button class="modalCloseButton">Close<i></i></button></div>
+    <form action="login" class="">
+      <h2>Register</h2>
+      <hr>
+      <div class="login-inputs d-flex flex-column">
+        <input type="text" placeholder="NAME">
+        <input type="text" placeholder="EMAIL">
+        <input type="text" placeholder="PHONE NUMBER">
+        <input type="text" placeholder="PASSWORD">
+      </div>
+      <button>SEND</button>
+      <p class="registerOption">You already have account ? Login</p>
+    </form>
+  </div>
+  <div id=""></div>
   <header class="d-flex justify-content-center align-items-center pt-5">
     <div class="decription w-25">
       <h1 class="fw-bolder display-1">Ice</h1>
