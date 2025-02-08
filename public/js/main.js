@@ -17,3 +17,9 @@ darkMode.addEventListener("click", darkmodetoggle);
 let loginButton = document.querySelector("#loginButton");
 loginButton.addEventListener("click" ,function() {alert("open modal")})
 //carousel 
+
+// burgerMenu 
+let burgerMenu = document.querySelector("#bourgir")
+burgerMenu.addEventListener("click", function() {
+    alert('burger menu displayed')
+})

@@ -11868,22 +11868,42 @@ section, header {
   padding-bottom: 5rem !important;
 }
 
+.sect-title {
+  padding-left: 20%;
+}
+
 nav {
   padding: 0;
   border-bottom: solid 4px pink;
   padding-top: 2rem !important;
   width: 90%;
+  overflow: hidden;
 }
-nav button {
-  border: none;
-  background-color: inherit;
-}
-nav > div {
+
+#bourgir {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
   cursor: pointer;
+}
+#bourgir span {
+  border: solid;
+  width: 25px;
+}
+
+@media (max-width: 850px) {
+  .burgered-part {
+    display: none !important;
+  }
+  #bourgir {
+    display: flex !important;
+  }
+}
+header {
+  gap: 15rem;
 }
 
 .big-ice-cream {
-  padding-left: 5rem;
   width: 40%;
   animation: up-down infinite alternate 2s;
   transition: 2s;
@@ -11899,6 +11919,7 @@ nav > div {
 }
 @media (max-width: 960px) {
   header {
+    gap: 2rem;
     display: revert;
     flex-direction: column-reverse;
   }

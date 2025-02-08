@@ -3,9 +3,18 @@ nav
     border-bottom: solid 4px pink  
     padding-top: 2rem !important 
     width: 90%
-    button 
-        border: none  
-        background-color: inherit 
-    > div 
-        cursor: pointer 
-
+    overflow: hidden
+#bourgir 
+    display: none 
+    flex-direction: column
+    gap: 5px
+    cursor: pointer 
+    span 
+        border: solid   
+        width: 25px
+@media (max-width: 850px) 
+    .burgered-part
+        display: none !important 
+    #bourgir
+        display: flex !important
+    
