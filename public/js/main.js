@@ -7,15 +7,25 @@ function darkmodetoggle() {
     allBody.classList.toggle("text-white");
     document.querySelector(".logos").children[0].classList.toggle("text-white")
     document.querySelector(".logos").children[1].classList.toggle("text-white")
+    console.log(darkMode.querySelector("i"));
+    if(allBody.classList.contains("bg-dark")) {
+        darkMode.querySelector("i").className = "bi bi-brightness-low-fill"
+    }
+    else {
+        darkMode.querySelector("i").className = "bi bi-moon-fill"
+    }
     allInsideBody.forEach(function(e) {
         if(!e.classList("bg-primary")) {
             e.classList.toggle("bg-dark");
         }
     })
+    
+     
 }
 darkMode.addEventListener("click", darkmodetoggle);
 // FIN DARKMODE
 // DEBUT MODAL
+let modalArea = document.querySelector("#Modals")
 let loginButton = document.querySelector("#loginButton");
 let loginModal = document.querySelector("#Login")
 loginButton.addEventListener("click" ,function() {

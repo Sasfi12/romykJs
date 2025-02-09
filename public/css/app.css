@@ -11925,6 +11925,7 @@ nav {
   display: flex;
   justify-content: center;
   cursor: pointer;
+  transition: 0;
 }
 .burger-content .logos {
   gap: 2rem;
@@ -11948,6 +11949,10 @@ nav {
     transform: translateY(27rem);
   }
 }
+.bi-brightness-low-fill {
+  font-size: 20px;
+}
+
 header {
   gap: 15rem;
 }
@@ -12027,8 +12032,23 @@ header {
   max-width: 50%;
 }
 
+.registerOption {
+  cursor: pointer !important;
+}
+
 .show-modal {
   display: revert !important;
+  z-index: 200;
+  position: absolute;
+  min-width: 30rem;
+  max-width: 30rem;
+  left: 45rem;
+  bottom: 25rem;
+  padding: 2%;
+}
+
+#Modals #Login, #Modals #Register {
+  box-shadow: 0px 0px 10px #ED84B1;
 }
 
 /*# sourceMappingURL=app.css.map */
