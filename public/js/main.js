@@ -23,7 +23,7 @@ function darkmodetoggle() {
      
 }
 darkMode.addEventListener("click", function() {
-    
+    darkmodetoggle()
 });
 // FIN DARKMODE
 // DEBUT MODAL

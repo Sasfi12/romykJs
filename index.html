@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
 
-<body class="text-black">
+<body class="text-black position-relative">
   <nav class="d-flex justify-content-between align-items-center w-100 ps-5 pe-5">
     <div class="logo-containe w-25 d-flex justify-content-start align-items-center">
       <img src="public/img/logo.png" alt="logo">
@@ -34,12 +34,13 @@
       <span></span><span></span><span></span>
     </div>
   </nav>
-  <div id="Modals d-flex justify-content-center align-items-center w-100">
-    <div id="Login" class="d-none bg-dark d-flex justify-content-center w-25 flex-column text-white align-items-center">
-      <div class="close-button "><button class="modalCloseButton">Close<i></i></button></div>
+  <div id="Modals" class="d-flex justify-content-center align-items-center w-100">
+    <div id="Login" class="d-none bg-dark d-flex justify-content-center w-100 flex-column text-white align-items-center">
+      <div class="close-button text-end"><button class="modalCloseButton bg-transparent border-0"><i class="bi bi-x-circle display-6 text-white "></i></button></div>
       <form action="" class="d-flex flex-column align-items-center justify-content-center">
         <h2>Login</h2>
-        <hr>
+        <hr class="text-white"> 
+        <!-- Find out why that hr won't appear -->
         <div class="login-inputs d-flex flex-column">
           <input type="text" placeholder="NAME">
           <input type="text" placeholder="EMAIL">
@@ -49,12 +50,15 @@
       </form>
     </div>
     <div id="Register" class="d-none bg-dark d-flex justify-content-center w-25 flex-column text-white align-items-center">
-      <div class="close-button "><button class="modalCloseButton">Close<i></i></button></div>
+      <div class="close-button text-end"><button class="modalCloseButton bg-transparent border-0"><i class="bi bi-x-circle display-6 text-white "></i></button></div>
       <form action="" class="d-flex flex-column align-items-center justify-content-center">
         <h2>Register</h2>
         <hr>
         <div class="login-inputs d-flex flex-column">
           <input type="text" placeholder="NAME">
+          <input type="text" placeholder="EMAIL">
+          <input type="text" placeholder="EMAIL">
+          <input type="text" placeholder="EMAIL">
           <input type="text" placeholder="EMAIL">
         </div>
         <button href="designs/modalLogin.webp">SEND</button>
@@ -96,6 +100,22 @@
         <div class="line"></div>
       </div>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    </div>
+    <div class="ice-creams">
+      <!-- Just working on the card for now.. -->
+      <div class="icecream-card d-flex flex-column justify-content-center align-items-center">
+        <div class="image bg-danger">
+          <img src="public/img/img-1.png" alt="img-1">
+        </div>
+        
+        <div class="description">
+            <div class="price text-center">
+              <button class="rounded-5">$10</button>
+            </div>
+          <h4>Strawberry Ice Cream</h4>
+          <button class="btn-outline-primary border-0">Add to Cart</button>
+        </div>
+      </div>
     </div>
   </section>
   <section id="ourService d-flex justify-content-center w-100">
@@ -198,6 +218,7 @@
   </section>
   <footer class="bg-dark text-white w-100 justify-content-center flex-column">
 
+  </footer>
     <script src="public/js/main.js"></script>
 </body>
 

@@ -32,7 +32,7 @@
   --bs-primary: #ED84B1;
   --bs-secondary: #6c757d;
   --bs-success: #198754;
-  --bs-info: #0dcaf0;
+  --bs-info: #F6F4C1;
   --bs-warning: #ffc107;
   --bs-danger: #F0F1EE;
   --bs-light: #f8f9fa;
@@ -40,7 +40,7 @@
   --bs-primary-rgb: 237, 132, 177;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 13, 202, 240;
+  --bs-info-rgb: 246, 244, 193;
   --bs-warning-rgb: 255, 193, 7;
   --bs-danger-rgb: 240, 241, 238;
   --bs-light-rgb: 248, 249, 250;
@@ -48,7 +48,7 @@
   --bs-primary-text-emphasis: rgb(94.8, 52.8, 70.8);
   --bs-secondary-text-emphasis: rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis: rgb(10, 54, 33.6);
-  --bs-info-text-emphasis: rgb(5.2, 80.8, 96);
+  --bs-info-text-emphasis: rgb(98.4, 97.6, 77.2);
   --bs-warning-text-emphasis: rgb(102, 77.2, 2.8);
   --bs-danger-text-emphasis: rgb(96, 96.4, 95.2);
   --bs-light-text-emphasis: #495057;
@@ -56,7 +56,7 @@
   --bs-primary-bg-subtle: rgb(251.4, 230.4, 239.4);
   --bs-secondary-bg-subtle: rgb(225.6, 227.4, 229);
   --bs-success-bg-subtle: rgb(209, 231, 220.8);
-  --bs-info-bg-subtle: rgb(206.6, 244.4, 252);
+  --bs-info-bg-subtle: rgb(253.2, 252.8, 242.6);
   --bs-warning-bg-subtle: rgb(255, 242.6, 205.4);
   --bs-danger-bg-subtle: rgb(252, 252.2, 251.6);
   --bs-light-bg-subtle: rgb(251.5, 252, 252.5);
@@ -64,7 +64,7 @@
   --bs-primary-border-subtle: rgb(247.8, 205.8, 223.8);
   --bs-secondary-border-subtle: rgb(196.2, 199.8, 203);
   --bs-success-border-subtle: rgb(163, 207, 186.6);
-  --bs-info-border-subtle: rgb(158.2, 233.8, 249);
+  --bs-info-border-subtle: rgb(251.4, 250.6, 230.2);
   --bs-warning-border-subtle: rgb(255, 230.2, 155.8);
   --bs-danger-border-subtle: rgb(249, 249.4, 248.2);
   --bs-light-border-subtle: #e9ecef;
@@ -144,7 +144,7 @@
   --bs-primary-text-emphasis: rgb(244.2, 181.2, 208.2);
   --bs-secondary-text-emphasis: rgb(166.8, 172.2, 177);
   --bs-success-text-emphasis: rgb(117, 183, 152.4);
-  --bs-info-text-emphasis: rgb(109.8, 223.2, 246);
+  --bs-info-text-emphasis: rgb(249.6, 248.4, 217.8);
   --bs-warning-text-emphasis: rgb(255, 217.8, 106.2);
   --bs-danger-text-emphasis: rgb(246, 246.6, 244.8);
   --bs-light-text-emphasis: #f8f9fa;
@@ -152,7 +152,7 @@
   --bs-primary-bg-subtle: rgb(47.4, 26.4, 35.4);
   --bs-secondary-bg-subtle: rgb(21.6, 23.4, 25);
   --bs-success-bg-subtle: rgb(5, 27, 16.8);
-  --bs-info-bg-subtle: rgb(2.6, 40.4, 48);
+  --bs-info-bg-subtle: rgb(49.2, 48.8, 38.6);
   --bs-warning-bg-subtle: rgb(51, 38.6, 1.4);
   --bs-danger-bg-subtle: rgb(48, 48.2, 47.6);
   --bs-light-bg-subtle: #343a40;
@@ -160,7 +160,7 @@
   --bs-primary-border-subtle: rgb(142.2, 79.2, 106.2);
   --bs-secondary-border-subtle: rgb(64.8, 70.2, 75);
   --bs-success-border-subtle: rgb(15, 81, 50.4);
-  --bs-info-border-subtle: rgb(7.8, 121.2, 144);
+  --bs-info-border-subtle: rgb(147.6, 146.4, 115.8);
   --bs-warning-border-subtle: rgb(153, 115.8, 4.2);
   --bs-danger-border-subtle: rgb(144, 144.6, 142.8);
   --bs-light-border-subtle: #495057;
@@ -1972,13 +1972,13 @@ progress {
 
 .table-info {
   --bs-table-color: #000;
-  --bs-table-bg: rgb(206.6, 244.4, 252);
-  --bs-table-border-color: rgb(165.28, 195.52, 201.6);
-  --bs-table-striped-bg: rgb(196.27, 232.18, 239.4);
+  --bs-table-bg: rgb(253.2, 252.8, 242.6);
+  --bs-table-border-color: rgb(202.56, 202.24, 194.08);
+  --bs-table-striped-bg: rgb(240.54, 240.16, 230.47);
   --bs-table-striped-color: #000;
-  --bs-table-active-bg: rgb(185.94, 219.96, 226.8);
+  --bs-table-active-bg: rgb(227.88, 227.52, 218.34);
   --bs-table-active-color: #000;
-  --bs-table-hover-bg: rgb(191.105, 226.07, 233.1);
+  --bs-table-hover-bg: rgb(234.21, 233.84, 224.405);
   --bs-table-hover-color: #000;
   color: var(--bs-table-color);
   border-color: var(--bs-table-border-color);
@@ -3019,19 +3019,19 @@ textarea.form-control-lg {
 
 .btn-info {
   --bs-btn-color: #000;
-  --bs-btn-bg: #0dcaf0;
-  --bs-btn-border-color: #0dcaf0;
+  --bs-btn-bg: #F6F4C1;
+  --bs-btn-border-color: #F6F4C1;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: rgb(49.3, 209.95, 242.25);
-  --bs-btn-hover-border-color: rgb(37.2, 207.3, 241.5);
-  --bs-btn-focus-shadow-rgb: 11, 172, 204;
+  --bs-btn-hover-bg: rgb(247.35, 245.65, 202.3);
+  --bs-btn-hover-border-color: rgb(246.9, 245.1, 199.2);
+  --bs-btn-focus-shadow-rgb: 209, 207, 164;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: rgb(61.4, 212.6, 243);
-  --bs-btn-active-border-color: rgb(37.2, 207.3, 241.5);
+  --bs-btn-active-bg: rgb(247.8, 246.2, 205.4);
+  --bs-btn-active-border-color: rgb(246.9, 245.1, 199.2);
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
   --bs-btn-disabled-color: #000;
-  --bs-btn-disabled-bg: #0dcaf0;
-  --bs-btn-disabled-border-color: #0dcaf0;
+  --bs-btn-disabled-bg: #F6F4C1;
+  --bs-btn-disabled-border-color: #F6F4C1;
 }
 
 .btn-warning {
@@ -3154,19 +3154,19 @@ textarea.form-control-lg {
 }
 
 .btn-outline-info {
-  --bs-btn-color: #0dcaf0;
-  --bs-btn-border-color: #0dcaf0;
+  --bs-btn-color: #F6F4C1;
+  --bs-btn-border-color: #F6F4C1;
   --bs-btn-hover-color: #000;
-  --bs-btn-hover-bg: #0dcaf0;
-  --bs-btn-hover-border-color: #0dcaf0;
-  --bs-btn-focus-shadow-rgb: 13, 202, 240;
+  --bs-btn-hover-bg: #F6F4C1;
+  --bs-btn-hover-border-color: #F6F4C1;
+  --bs-btn-focus-shadow-rgb: 246, 244, 193;
   --bs-btn-active-color: #000;
-  --bs-btn-active-bg: #0dcaf0;
-  --bs-btn-active-border-color: #0dcaf0;
+  --bs-btn-active-bg: #F6F4C1;
+  --bs-btn-active-border-color: #F6F4C1;
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-  --bs-btn-disabled-color: #0dcaf0;
+  --bs-btn-disabled-color: #F6F4C1;
   --bs-btn-disabled-bg: transparent;
-  --bs-btn-disabled-border-color: #0dcaf0;
+  --bs-btn-disabled-border-color: #F6F4C1;
   --bs-gradient: none;
 }
 
@@ -6818,8 +6818,8 @@ textarea.form-control-lg {
   text-decoration-color: RGBA(var(--bs-info-rgb), var(--bs-link-underline-opacity, 1)) !important;
 }
 .link-info:hover, .link-info:focus {
-  color: RGBA(61, 213, 243, var(--bs-link-opacity, 1)) !important;
-  text-decoration-color: RGBA(61, 213, 243, var(--bs-link-underline-opacity, 1)) !important;
+  color: RGBA(248, 246, 205, var(--bs-link-opacity, 1)) !important;
+  text-decoration-color: RGBA(248, 246, 205, var(--bs-link-underline-opacity, 1)) !important;
 }
 
 .link-warning {
@@ -11949,10 +11949,6 @@ nav {
     transform: translateY(27rem);
   }
 }
-.bi-brightness-low-fill {
-  font-size: 20px;
-}
-
 header {
   gap: 15rem;
 }
@@ -12036,19 +12032,19 @@ header {
   cursor: pointer !important;
 }
 
+#Modal {
+  display: flex !important;
+  position: relative;
+}
+
 .show-modal {
   display: revert !important;
   z-index: 200;
-  position: absolute;
   min-width: 30rem;
   max-width: 30rem;
-  left: 45rem;
-  bottom: 25rem;
   padding: 2%;
-}
-
-#Modals #Login, #Modals #Register {
-  box-shadow: 0px 0px 10px #ED84B1;
+  position: absolute;
+  top: 20rem;
 }
 
 /*# sourceMappingURL=app.css.map */
