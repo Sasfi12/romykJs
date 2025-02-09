@@ -12080,10 +12080,15 @@ header {
   position: relative;
   width: 75%;
   overflow: hidden;
+  animation: turnarround infinite 3s;
 }
-#testimonials .container-fluid .card, #testimonials .container-sm .card, #testimonials .container-md .card, #testimonials .container-lg .card, #testimonials .container-xl .card, #testimonials .container-xxl .card {
-  min-width: 50%;
-  max-width: 50%;
+#testimonials .container-fluid .card-displayed, #testimonials .container-sm .card-displayed, #testimonials .container-md .card-displayed, #testimonials .container-lg .card-displayed, #testimonials .container-xl .card-displayed, #testimonials .container-xxl .card-displayed {
+  min-width: 50% !important;
+  max-width: 50% !important;
+}
+#testimonials .container-fluid .card-displayed .card, #testimonials .container-sm .card-displayed .card, #testimonials .container-md .card-displayed .card, #testimonials .container-lg .card-displayed .card, #testimonials .container-xl .card-displayed .card, #testimonials .container-xxl .card-displayed .card {
+  min-width: 20rem !important;
+  max-width: 20rem !important;
 }
 
 .registerOption {
