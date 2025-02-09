@@ -22,7 +22,9 @@ function darkmodetoggle() {
     
      
 }
-darkMode.addEventListener("click", darkmodetoggle);
+darkMode.addEventListener("click", function() {
+    
+});
 // FIN DARKMODE
 // DEBUT MODAL
 let modalArea = document.querySelector("#Modals")
