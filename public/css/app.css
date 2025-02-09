@@ -11910,7 +11910,6 @@ nav {
   align-items: center;
   gap: 2rem;
   right: 10px;
-  transition: 2s;
   bottom: 4rem;
   position: absolute;
   animation: navbarIncoming 0.5s forwards;
@@ -11921,11 +11920,11 @@ nav {
 .burger-content .nav-elements {
   flex-direction: column;
 }
-.burger-content .nav-elements > div {
+.burger-content .nav-elements div {
   display: flex;
   justify-content: center;
   cursor: pointer;
-  transition: 0;
+  transition: 0s;
 }
 .burger-content .logos {
   gap: 2rem;
@@ -12000,10 +11999,69 @@ header {
     width: auto;
   }
 }
-.conteneur-prix-carte {
-  top: 9.3rem;
+#featuredIceCream .ice-creams {
+  display: flex !important;
+  flex-direction: column;
+  gap: 5rem;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center !important;
+  gap: 2rem;
+  width: 25rem;
+  box-shadow: 0px 0px 20px grey;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .image {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .image:hover {
+  background-color: #F6F4C1 !important;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .description {
+  display: flex;
+  gap: 2rem !important;
+  position: relative;
+  padding-bottom: 2rem;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .description .add-to-cart {
+  border: solid 0.5px #ED84B1;
+  border-radius: 20px;
+  transition: 0.2s;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .description .add-to-cart:hover {
+  background-color: #ED84B1 !important;
+  color: white !important;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .description .price {
+  padding: 0.5rem !important;
+  border: 2px #ED84B1 !important;
+  border-color: #F0F1EE !important;
+  border-radius: 50px !important;
+  position: absolute;
+  bottom: 9rem;
+  z-index: 3;
+  background-color: white;
+  font-style: italic;
+}
+#featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .description .price button {
+  background-color: inherit;
+  border: none;
+  font-size: 1.5em;
 }
 
+@media (max-width: 1000px) {
+  .ice-creams {
+    gap: 0.7rem !important;
+  }
+  .ice-creams .icecream-cards-line {
+    justify-content: center !important;
+  }
+}
 #testimonials {
   margin-bottom: 10rem;
 }
@@ -12045,6 +12103,7 @@ header {
   padding: 2%;
   position: absolute;
   top: 20rem;
+  box-shadow: 0px 0px 100px white;
 }
 
 /*# sourceMappingURL=app.css.map */

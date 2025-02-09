@@ -56,7 +56,7 @@ modalCloseButton.forEach(function(e) {
     })
 })
 // FIN MODAL
-// burgerMenu 
+// DEBUT BURGER 
 let burgerMenu = document.querySelector("#bourgir");
 let burgeredPart = document.querySelector("#burgeredPart");
 burgerMenu.addEventListener("click", function() {
@@ -67,4 +67,5 @@ setInterval(function() {
         burgeredPart.classList.remove("burger-content")
     }
 }, 200  )
+// FIN BURGER
 //carousel 
