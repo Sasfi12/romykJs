@@ -69,19 +69,44 @@ setInterval(function() {
 }, 200  )
 // FIN BURGER
 //carousel 
-let testiomonies = document.querySelector("#testimonials");
+let testimonies = document.querySelector("#testimonials");
 let leftButton = document.querySelector(".left-button");
 let rigthButton = document.querySelector(".right-button");
-let allCarouselsElems = testiomonies.querySelectorAll(".card");
-let carouselsElems
+let allCarouselsElems = testimonies.querySelectorAll(".card");
+let carouselsElems = []
+let current = 0
 allCarouselsElems.forEach(function(e) {
-    console.log(carouselsElems)
+    console.log(e)
+    carouselsElems.push(e.id)
 })
 console.log(allCarouselsElems)
-leftButton.addEventListener("click", function() {
+console.log(carouselsElems)
+function updateCarouselView() {
+    allCarouselsElems.forEach(function(e) {
+        if(e.classList.contains("carousel-activated")) {
+            e.classList.replace("carousel-activated","carousel-not-activated") ; 
+            }
+        })
+    allCarouselsElems[current].classList.replace("carousel-not-activated" , "carousel-activated"); 
+}
+leftButton.addEventListener("click",  function() {
+    // animate("left")
+    current -= 1 
+    if(current < 0) {
+        current = carouselsElems.length - 1
+    }
+    console.log(carouselsElems[current]);
+    console.log(current) 
+    updateCarouselView()
     
 });
-rigthButton.addEventListener("click", function() {
-    
+rigthButton.addEventListener("click", function(e) {
+    current += 1
+    if(current > 2) {
+        current = 0
+    }
+    console.log(carouselsElems[current]);
+    console.log(current)
+    updateCarouselView()
 });
 
