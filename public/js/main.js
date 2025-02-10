@@ -69,3 +69,19 @@ setInterval(function() {
 }, 200  )
 // FIN BURGER
 //carousel 
+let testiomonies = document.querySelector("#testimonials");
+let leftButton = document.querySelector(".left-button");
+let rigthButton = document.querySelector(".right-button");
+let allCarouselsElems = testiomonies.querySelectorAll(".card");
+let carouselsElems
+allCarouselsElems.forEach(function(e) {
+    console.log(carouselsElems)
+})
+console.log(allCarouselsElems)
+leftButton.addEventListener("click", function() {
+    
+});
+rigthButton.addEventListener("click", function() {
+    
+});
+

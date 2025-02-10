@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ROMYK</title>
   <link rel="stylesheet" href="public/css/app.css">
   <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
 </head>
@@ -16,11 +16,11 @@
     </div>
     <div id="burgeredPart" class="w-100">
       <div class="nav-elements d-flex gap-5 justify-content-center">
-        <div>Home</div>
-        <div>About</div>
-        <div>Icecream</div>
-        <div>Services</div>
-        <div>Blog</div>
+        <div  style="cursor: pointer"><a href="#bigICECREAM"  style="text-decoration: none; color: inherit;">Home    </a></div>
+        <div  style="cursor: pointer"><a href="#aboutIceCream"  style="text-decoration: none; color: inherit;">About   </a></div>
+        <div  style="cursor: pointer"><a href="#featuredIceCream"  style="text-decoration: none; color: inherit;">Icecream</a></div>
+        <div  style="cursor: pointer"><a href="#ourService" style="text-decoration: none; color: inherit;">Services</a></div>
+        <div  style="cursor: pointer"><a href="#testimonials"  style="text-decoration: none; color: inherit;">Blog    </a></div>
       </div>
       <div class="logos d-flex justify-content-start">
         <button class="border-0 btn-outline-primary" id="loginButton">Login <i
@@ -70,7 +70,7 @@
       </form>
     </div>
   </div>
-  <header class="d-flex justify-content-center align-items-center pt-5">
+  <header id="bigICECREAM" class="d-flex justify-content-center align-items-center pt-5">
     <div class="decription w-25">
       <h1 class="fw-bolder display-1">Ice</h1>
       <h1 class="fw-bolder display-1">Cream</h1>
@@ -237,7 +237,7 @@
 
     </div>
   </section>
-  <section id="ourService d-flex justify-content-center w-100">
+  <section id="ourService">
     <div class="sect-title ">
       <div class="d-flex">
         <h1 class="fw-bolder display-5 w-100 ">Our Icecream Services</h1>
@@ -285,18 +285,53 @@
     </div>
     <div class="d-flex justify-content-center w-auto w-100" style="height: 25rem; width: 100%;">
       <div class="w-50 d-flex align-items-center justify-content-center overflow-hidden" style="height: 25rem; width: 100%;">
-        <div class="card d-flex p-5">
+        <div id="firstImage" class="card d-flex p-5">
 
           <div class="card-body d-flex justify-content-center align-items-center flex-column">
-            <div>
+            <div class="d-flex justify-content-center align-items-center flex-column position-relative">
 
               <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta
                 fugiat, modi accusantium necessitatibus facilis ipsa laudantium nihil. Veniam vero facere blanditiis
                 beatae, quod omnis deserunt quas numquam nam est.</p>
+                <h5 class="card-title text-center">Marie a</h5>
+                <img src="public/img/client-img.png" alt="" style="width: 9rem ; position: absolute; top: 7rem;">
 
             </div>
-            <h5 class="card-title text-center">Marie a</h5>
-            <img src="public/img/client-img.png" alt="" style="width: 9rem ; position: absolute; top: 12rem;">
+            
+
+          </div>
+
+        </div>
+        <div id="secondImage" class="card d-flex p-5 carousel-not-activated">
+
+          <div class="card-body d-flex justify-content-center align-items-center flex-column">
+            <div class="d-flex justify-content-center align-items-center flex-column position-relative">
+
+              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta
+                fugiat, modi accusantium necessitatibus facilis ipsa laudantium nihil. Veniam vero facere blanditiis
+                beatae, quod omnis deserunt quas numquam nam est.</p>
+                <h5 class="card-title text-center">Marie a</h5>
+                <img src="public/img/client-img.png" alt="" style="width: 9rem ; position: absolute; top: 7rem;">
+
+            </div>
+            
+
+          </div>
+
+        </div>
+        <div id="lastImage" class="card d-flex p-5 carousel-not-activated">
+
+          <div class="card-body d-flex justify-content-center align-items-center flex-column">
+            <div class="d-flex justify-content-center align-items-center flex-column position-relative">
+
+              <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias soluta
+                fugiat, modi accusantium necessitatibus facilis ipsa laudantium nihil. Veniam vero facere blanditiis
+                beatae, quod omnis deserunt quas numquam nam est.</p>
+                <h5 class="card-title text-center">Marie a</h5>
+                <img src="public/img/client-img.png" alt="" style="width: 9rem ; position: absolute; top: 7rem;">
+
+            </div>
+            
 
           </div>
 
@@ -304,7 +339,7 @@
       </div>
     </div>
   </section>
-  <footer class="bg-dark text-white w-100 justify-content-center flex-column">
+  <footer id="contactUs" class="bg-dark text-white w-100 justify-content-center flex-column">
 
   </footer>
   <script src="public/js/main.js"></script>
