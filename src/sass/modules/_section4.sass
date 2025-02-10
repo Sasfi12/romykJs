@@ -20,9 +20,12 @@
 .carousel-not-activated
           display: none !important
 .carousel-activated
-          animation: come-from-west 1s alternate infinite 
+          animation: come-from-west 1s alternate
+          box-shadow: 0px 0px 90px grey !important 
 
-@keyframes 
+
+@keyframes come-from-west 
     from 
-           
-    to 
+        transform: translateX(50rem)    
+    to  
+        transform: translateX(0)

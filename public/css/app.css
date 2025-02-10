@@ -11873,7 +11873,7 @@ section, header {
 }
 
 nav {
-  padding: 0;
+  padding: 4rem !important;
   border-bottom: solid 4px pink;
   padding-top: 2rem !important;
   width: 90%;
@@ -11945,7 +11945,7 @@ nav {
     transform: translateX(27rem);
   }
   to {
-    transform: translateY(27rem);
+    transform: translateY(23rem);
   }
 }
 header {
@@ -12091,10 +12091,18 @@ header {
 }
 
 .carousel-activated {
-  animation: come-from-west 1s alternate infinite;
+  animation: come-from-west 1s alternate;
+  box-shadow: 0px 0px 90px grey !important;
 }
 
-@keyframes {}
+@keyframes come-from-west {
+  from {
+    transform: translateX(50rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
 .registerOption {
   cursor: pointer !important;
 }
@@ -12113,6 +12121,25 @@ header {
   position: absolute;
   top: 20rem;
   box-shadow: 0px 0px 10px white;
+}
+
+#contactUs .contact-section .contact-left {
+  width: 25%;
+  display: flex;
+  gap: 2rem;
+  flex-direction: column;
+}
+#contactUs .contact-section .contact-left h1, #contactUs .contact-section .contact-left .h1 {
+  border-bottom: solid 1px white;
+}
+#contactUs .contact-section .contact-left input {
+  background-color: inherit;
+  border: none;
+  border-bottom: 1px white solid !important;
+}
+#contactUs .contact-section .contact-left input:placeholder {
+  color: red !important;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=app.css.map */

@@ -110,3 +110,10 @@ rigthButton.addEventListener("click", function(e) {
     updateCarouselView()
 });
 
+setInterval(function() {
+    current += 1
+    if(current > 2) {
+        current = 0
+    }
+    updateCarouselView()
+}, 5000)
