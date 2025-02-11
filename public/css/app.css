@@ -12179,6 +12179,14 @@ header {
   width: 100%;
   border: none;
 }
+#Modals #Login form button:hover, #Modals #Register form button:hover {
+  background-color: white;
+  color: black;
+}
+#Modals #Login form button:active, #Modals #Register form button:active {
+  background-color: grey;
+  color: black;
+}
 
 #contactUs {
   padding-top: 5rem;
