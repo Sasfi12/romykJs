@@ -12104,11 +12104,6 @@ header {
   box-shadow: 0px 0px 10px grey !important;
 }
 
-.carousel-activated.east {
-  animation: come-from-east 1s alternate;
-  box-shadow: 0px 0px 10px grey !important;
-}
-
 .carousel-button-container {
   position: absolute;
   top: 15rem !important;
@@ -12151,10 +12146,40 @@ header {
   box-shadow: 0px 0px 10px white;
 }
 
-#Modal {
+#Modals {
   display: flex !important;
   position: relative;
 }
+#Modals #Login form, #Modals #Register form {
+  display: flex;
+  gap: 1rem;
+}
+#Modals #Login form h2, #Modals #Login form .h2, #Modals #Register form h2, #Modals #Register form .h2 {
+  text-align: center;
+  padding-bottom: 0.5rem;
+  width: 50%;
+  border-bottom: solid 1px white;
+}
+#Modals #Login form .login-inputs, #Modals #Register form .login-inputs {
+  gap: 2rem;
+  width: 100%;
+}
+#Modals #Login form .login-inputs input, #Modals #Register form .login-inputs input {
+  background-color: inherit;
+  border: none;
+  border-bottom: solid white 1px;
+  width: 100%;
+  color: white;
+}
+#Modals #Login form .login-inputs input::placeholder, #Modals #Register form .login-inputs input::placeholder {
+  color: white !important;
+}
+#Modals #Login form button, #Modals #Register form button {
+  background-color: #ED84B1;
+  width: 100%;
+  border: none;
+}
+
 #contactUs {
   padding-top: 5rem;
 }

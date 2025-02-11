@@ -86,7 +86,7 @@ function updateCarouselView() {
         if(e.classList.contains("carousel-activated"))  {
             e.classList.replace("carousel-activated","carousel-not-activated") ; 
             }
-        })
+        })  
     allCarouselsElems[current].classList.replace("carousel-not-activated" , "carousel-activated"); 
 }
 leftButton.addEventListener("click",  function() {

@@ -10,7 +10,30 @@
     position: absolute
     top: 20rem
     box-shadow: 0px 0px 10px white 
-#Modal 
+#Modals 
     display: flex !important
     position: relative 
-    #Login 
+    #Login, #Register 
+        form 
+            display: flex 
+            gap: 1rem
+            h2
+                text-align: center
+                padding-bottom: 0.5rem  
+                width: 50% 
+                border-bottom: solid 1px white
+            .login-inputs
+                gap: 2rem
+                width: 100%
+                input 
+                    background-color: inherit 
+                    border: none 
+                    border-bottom: solid white 1px
+                    width: 100%
+                    color: white
+                    &::placeholder 
+                        color: white !important
+            button 
+                background-color: $primary 
+                width: 100%
+                border: none 
