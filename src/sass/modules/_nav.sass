@@ -1,5 +1,4 @@
 nav    
-    padding: 4rem !important 
     border-bottom: solid 4px pink  
     padding-top: 2rem !important 
     width: 90%
@@ -28,11 +27,12 @@ nav
     display: flex !important 
     flex-direction: column 
     align-items: center
-    gap: 2rem
-    left: 10rem
+    gap: 2rem 
+    width: 100% !important 
     bottom: 4rem
     position: absolute 
     animation: navbarIncoming 0.5s forwards
+    z-index: 2
     *
         background-color: $primary 
     .nav-elements 
@@ -49,11 +49,13 @@ nav
 @media (max-width: 850px) 
     #burgeredPart
         display: none
+        justify-content: center 
+        align-items: center
     #bourgir
         display: flex !important
     
 @keyframes navbarIncoming 
     from 
-        transform: translateX(27rem)
+        transform: none
     to 
-        transform: translateY(23rem) 
+        transform: translateY(26.9rem) translateX(-3rem)

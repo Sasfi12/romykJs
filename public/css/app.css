@@ -11854,9 +11854,12 @@ body {
 .order-now {
   border-radius: 7px;
   transition: 0.5s;
+  background-color: #ED84B1;
+  border: none;
 }
 .order-now:hover {
   background-color: black !important;
+  color: white;
 }
 
 .container {
@@ -11872,8 +11875,11 @@ section, header {
   padding-left: 20%;
 }
 
+.no-radius {
+  border-radius: 0 !important;
+}
+
 nav {
-  padding: 4rem !important;
   border-bottom: solid 4px pink;
   padding-top: 2rem !important;
   width: 90%;
@@ -11909,10 +11915,11 @@ nav {
   flex-direction: column;
   align-items: center;
   gap: 2rem;
-  left: 10rem;
+  width: 100% !important;
   bottom: 4rem;
   position: absolute;
   animation: navbarIncoming 0.5s forwards;
+  z-index: 2;
 }
 .burger-content * {
   background-color: #ED84B1;
@@ -11935,6 +11942,8 @@ nav {
 @media (max-width: 850px) {
   #burgeredPart {
     display: none;
+    justify-content: center;
+    align-items: center;
   }
   #bourgir {
     display: flex !important;
@@ -11942,10 +11951,10 @@ nav {
 }
 @keyframes navbarIncoming {
   from {
-    transform: translateX(27rem);
+    transform: none;
   }
   to {
-    transform: translateY(23rem);
+    transform: translateY(26.9rem) translateX(-3rem);
   }
 }
 header {
@@ -12002,13 +12011,13 @@ header {
 #featuredIceCream .ice-creams {
   display: flex !important;
   flex-direction: column;
-  gap: 5rem;
+  gap: 1rem;
 }
 #featuredIceCream .ice-creams .icecream-cards-line .icecream-cards {
   display: flex;
   flex-direction: column;
   justify-content: center !important;
-  width: 20rem;
+  width: 25rem;
   box-shadow: 0px 0px 20px grey;
 }
 #featuredIceCream .ice-creams .icecream-cards-line .icecream-cards .image {
@@ -12092,7 +12101,18 @@ header {
 
 .carousel-activated {
   animation: come-from-west 1s alternate;
-  box-shadow: 0px 0px 90px grey !important;
+  box-shadow: 0px 0px 10px grey !important;
+}
+
+.carousel-activated.east {
+  animation: come-from-east 1s alternate;
+  box-shadow: 0px 0px 10px grey !important;
+}
+
+.carousel-button-container {
+  position: absolute;
+  top: 15rem !important;
+  z-index: 1000;
 }
 
 @keyframes come-from-west {
@@ -12103,13 +12123,21 @@ header {
     transform: translateX(0);
   }
 }
+@keyframes come-from-east {
+  from {
+    transform: translateX(-50rem);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+@media (max-width: 800px) {
+  .div-hider {
+    width: 100% !important;
+  }
+}
 .registerOption {
   cursor: pointer !important;
-}
-
-#Modal {
-  display: flex !important;
-  position: relative;
 }
 
 .show-modal {
@@ -12123,11 +12151,22 @@ header {
   box-shadow: 0px 0px 10px white;
 }
 
+#Modal {
+  display: flex !important;
+  position: relative;
+}
+#contactUs {
+  padding-top: 5rem;
+}
+#contactUs .contact-section {
+  margin-top: 3rem;
+}
 #contactUs .contact-section .contact-left {
   width: 25%;
-  display: flex;
+  display: flex !important;
   gap: 2rem;
   flex-direction: column;
+  padding-bottom: 15rem;
 }
 #contactUs .contact-section .contact-left h1, #contactUs .contact-section .contact-left .h1 {
   border-bottom: solid 1px white;
@@ -12137,9 +12176,34 @@ header {
   border: none;
   border-bottom: 1px white solid !important;
 }
-#contactUs .contact-section .contact-left input:placeholder {
-  color: red !important;
+#contactUs .contact-section .contact-left input::placeholder {
+  color: white !important;
   opacity: 1;
+}
+#contactUs .contact-section .contact-right {
+  padding-bottom: 10rem;
+}
+
+.massage {
+  background-color: none !important;
+}
+.massage:placeholder {
+  color: white !important;
+}
+
+@media (max-width: 768px) {
+  .contact-section {
+    flex-direction: column !important;
+  }
+  .contact-section .contact-left {
+    width: 100% !important;
+    padding-bottom: 5rem !important;
+  }
+}
+@media (max-width: 500px) {
+  .social-media {
+    flex-direction: column;
+  }
 }
 
 /*# sourceMappingURL=app.css.map */

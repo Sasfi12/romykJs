@@ -18,14 +18,30 @@
         max-width: 50% !important
 
 .carousel-not-activated
-          display: none !important
+    display: none !important
+
 .carousel-activated
-          animation: come-from-west 1s alternate
-          box-shadow: 0px 0px 90px grey !important 
+    animation: come-from-west 1s alternate
+    box-shadow: 0px 0px 10px grey !important
+.carousel-activated.east
+    animation: come-from-east 1s alternate
+    box-shadow: 0px 0px 10px grey !important 
 
 
+.carousel-button-container 
+    position: absolute 
+    top: 15rem!important 
+    z-index: 1000
 @keyframes come-from-west 
     from 
         transform: translateX(50rem)    
     to  
         transform: translateX(0)
+@keyframes come-from-east 
+    from 
+        transform: translateX(-50rem)    
+    to  
+        transform: translateX(0)
+@media (max-width: 800px) 
+    .div-hider 
+        width: 100% !important

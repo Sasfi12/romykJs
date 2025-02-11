@@ -83,7 +83,7 @@ console.log(allCarouselsElems)
 console.log(carouselsElems)
 function updateCarouselView() {
     allCarouselsElems.forEach(function(e) {
-        if(e.classList.contains("carousel-activated")) {
+        if(e.classList.contains("carousel-activated"))  {
             e.classList.replace("carousel-activated","carousel-not-activated") ; 
             }
         })
@@ -98,7 +98,6 @@ leftButton.addEventListener("click",  function() {
     console.log(carouselsElems[current]);
     console.log(current) 
     updateCarouselView()
-    
 });
 rigthButton.addEventListener("click", function(e) {
     current += 1
