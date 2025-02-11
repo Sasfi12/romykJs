@@ -12157,7 +12157,7 @@ header {
 #Modals #Login form h2, #Modals #Login form .h2, #Modals #Register form h2, #Modals #Register form .h2 {
   text-align: center;
   padding-bottom: 0.5rem;
-  width: 50%;
+  width: 100%;
   border-bottom: solid 1px white;
 }
 #Modals #Login form .login-inputs, #Modals #Register form .login-inputs {

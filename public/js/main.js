@@ -81,13 +81,22 @@ allCarouselsElems.forEach(function(e) {
 })
 console.log(allCarouselsElems)
 console.log(carouselsElems)
-function updateCarouselView() {
+function updateCarouselView(choice) {
     allCarouselsElems.forEach(function(e) {
         if(e.classList.contains("carousel-activated"))  {
             e.classList.replace("carousel-activated","carousel-not-activated") ; 
             }
+            allCarouselsElems[current].classList.replace("carousel-not-activated" , "carousel-activated");
+            e.classList.remove("west");
+            e.classList.remove("east"); 
+            if(choice== "east") {
+                allCarouselsElems[current].classList.add("east")
+            }
+            if(choice== "west") {
+                allCarouselsElems[current].classList.add("west")
+            }
         })  
-    allCarouselsElems[current].classList.replace("carousel-not-activated" , "carousel-activated"); 
+    
 }
 leftButton.addEventListener("click",  function() {
     // animate("left")
@@ -97,7 +106,7 @@ leftButton.addEventListener("click",  function() {
     }
     console.log(carouselsElems[current]);
     console.log(current) 
-    updateCarouselView()
+    updateCarouselView("west")
 });
 rigthButton.addEventListener("click", function(e) {
     current += 1
@@ -106,7 +115,7 @@ rigthButton.addEventListener("click", function(e) {
     }
     console.log(carouselsElems[current]);
     console.log(current)
-    updateCarouselView()
+    updateCarouselView("east")
 });
 
 setInterval(function() {
