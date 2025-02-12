@@ -21,6 +21,7 @@ nav
             background-color: inherit !important
 // class for when the burger is clicked 
 .burger-content 
+    padding: 2rem
     background-color: $primary
     justify-content: center
     z-index: 5
@@ -29,9 +30,8 @@ nav
     align-items: center
     gap: 2rem 
     width: 100% !important 
-    bottom: 4rem
     position: absolute 
-    animation: navbarIncoming 0.5s forwards
+    animation: navbarIncoming 1s forwards
     z-index: 2
     *
         background-color: $primary 
@@ -56,6 +56,6 @@ nav
     
 @keyframes navbarIncoming 
     from 
-        transform: none
+        transform: 0 
     to 
-        transform: translateY(26.9rem) translateX(-3rem)
+        transform: translateY(10.5rem) translateX(-3rem) 

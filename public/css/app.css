@@ -11915,6 +11915,7 @@ nav {
 }
 
 .burger-content {
+  padding: 2rem;
   background-color: #ED84B1;
   justify-content: center;
   z-index: 5;
@@ -11923,9 +11924,8 @@ nav {
   align-items: center;
   gap: 2rem;
   width: 100% !important;
-  bottom: 4rem;
   position: absolute;
-  animation: navbarIncoming 0.5s forwards;
+  animation: navbarIncoming 1s forwards;
   z-index: 2;
 }
 .burger-content * {
@@ -11958,10 +11958,10 @@ nav {
 }
 @keyframes navbarIncoming {
   from {
-    transform: none;
+    transform: 0;
   }
   to {
-    transform: translateY(26.9rem) translateX(-3rem);
+    transform: translateY(10.5rem) translateX(-3rem);
   }
 }
 header {
@@ -12248,6 +12248,16 @@ header {
     scale: 0.9;
   }
 }
+@media (max-width: 440px) {
+  #Login, Register {
+    scale: 0.8;
+  }
+}
+@media (max-width: 400px) {
+  #Login, Register {
+    scale: 0.7;
+  }
+}
 @media (max-width: 350px) {
   #Login, Register {
     scale: 0.7;
@@ -12260,8 +12270,8 @@ header {
 }
 #contactUs {
   padding-top: 5rem;
-  padding-right: 5rem !important;
-  padding-left: 5rem !important;
+  padding-right: 5rem;
+  padding-left: 5rem;
 }
 #contactUs .contact-section {
   margin-top: 3rem;
@@ -12318,9 +12328,19 @@ header {
     padding-bottom: 5rem !important;
   }
 }
-@media (max-width: 500px) {
+@media (max-width: 600px) {
+  footer {
+    padding-right: 0;
+    padding-left: 0;
+  }
+  footer * {
+    padding: 0;
+  }
   .social-media {
     flex-direction: column;
+  }
+  .social-media * {
+    padding: 0;
   }
 }
 
