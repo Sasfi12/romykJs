@@ -3,22 +3,17 @@ let darkMode = document.querySelector("#darkMode");
 let allInsideBody = document.body.querySelectorAll("*");
 let allBody = document.querySelector("body");
 function darkmodetoggle() {
-    allBody.classList.toggle("bg-dark");
+    allBody.classList.toggle("bg-black");
     allBody.classList.toggle("text-white");
     document.querySelector(".logos").children[0].classList.toggle("text-white")
     document.querySelector(".logos").children[1].classList.toggle("text-white")
     console.log(darkMode.querySelector("i"));
-    if(allBody.classList.contains("bg-dark")) {
+    if(allBody.classList.contains("bg-black")) {
         darkMode.querySelector("i").className = "bi bi-brightness-low-fill"
     }
     else {
         darkMode.querySelector("i").className = "bi bi-moon-fill"
     }
-    allInsideBody.forEach(function(e) {
-        if(!e.classList("bg-primary")) {
-            e.classList.toggle("bg-dark");
-        }
-    })
     
      
 }
@@ -75,6 +70,7 @@ let rigthButton = document.querySelector(".right-button");
 let allCarouselsElems = testimonies.querySelectorAll(".card");
 let carouselsElems = []
 let current = 0
+let direction = ""
 allCarouselsElems.forEach(function(e) {
     console.log(e)
     carouselsElems.push(e.id)
@@ -86,17 +82,17 @@ function updateCarouselView(choice) {
         if(e.classList.contains("carousel-activated"))  {
             e.classList.replace("carousel-activated","carousel-not-activated") ; 
             }
-            allCarouselsElems[current].classList.replace("carousel-not-activated" , "carousel-activated");
+            
             e.classList.remove("west");
             e.classList.remove("east"); 
-            if(choice== "east") {
-                allCarouselsElems[current].classList.add("east")
-            }
-            if(choice== "west") {
-                allCarouselsElems[current].classList.add("west")
-            }
-        })  
-    
+        }) 
+        allCarouselsElems[current].classList.replace("carousel-not-activated" , "carousel-activated"); 
+        if(choice== "east") {
+            allCarouselsElems[current].classList.add("east")
+        }
+        if(choice== "west") {
+            allCarouselsElems[current].classList.add("west")
+        }
 }
 leftButton.addEventListener("click",  function() {
     // animate("left")
@@ -123,5 +119,5 @@ setInterval(function() {
     if(current > 2) {
         current = 0
     }
-    updateCarouselView()
-}, 5000)
+    updateCarouselView("east")
+}, 10000)

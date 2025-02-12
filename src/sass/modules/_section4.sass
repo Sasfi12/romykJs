@@ -16,30 +16,63 @@
       .card-displayed
         min-width: 50% !important 
         max-width: 50% !important
+      * , &::before , &::after 
+            box-sizing: border-box
 
 .carousel-not-activated
     display: none !important
 
-.carousel-activated
+.carousel-activated.east
+    animation: come-from-east 1s alternate
+    box-shadow: 0px 0px 10px grey !important 
+.carousel-activated.west
     animation: come-from-west 1s alternate
     box-shadow: 0px 0px 10px grey !important 
-
-
 .carousel-button-container 
     position: absolute 
     top: 15rem!important 
     z-index: 1000
 @keyframes come-from-west 
     from 
-        transform: translateX(50rem)    
+        transform: translateX(-50rem)    
     to  
         transform: translateX(0)
 @keyframes come-from-east 
     from 
-        transform: translateX(-50rem)    
+        transform: translateX(50rem)    
     to  
         transform: translateX(0)
-@media (max-width: 800px) 
-    .div-hider 
+@media (max-width: 1040px) 
+    #testimonials 
         width: 100% !important
-        
+        .carousel-div
+            width: 100% !important 
+            .div-hider
+                width: 75% !important
+@media (max-width: 850px) 
+    #testimonials 
+        width: 100% !important
+        .carousel-button-container 
+            justify-content: space-between !important
+        .carousel-div
+            width: 100% !important 
+            .div-hider
+                width: 100% !important
+
+@media (max-width: 850px) 
+    #testimonials 
+        width: 100% !important
+        .carousel-button-container 
+            justify-content: space-between !important
+        .carousel-div
+            width: 100% !important 
+            .div-hider
+                width: 100% !important
+                height: 100% !important
+@media (max-width: 440px) 
+    .div-hider 
+        .card 
+            .card-body 
+                .d-flex 
+                    img 
+                        top: 15rem !important 
