@@ -57,11 +57,11 @@ let burgeredPart = document.querySelector("#burgeredPart");
 burgerMenu.addEventListener("click", function() {
     burgeredPart.classList.toggle("burger-content")
 })
-setInterval(function() {
-    if(window.innerWidth > 850) {
+window.addEventListener("resize", function() {
+    if(this.innerWidth > 850) {
         burgeredPart.classList.remove("burger-content")
     }
-}, 200  )
+})
 // FIN BURGER
 //carousel 
 let testimonies = document.querySelector("#testimonials");
