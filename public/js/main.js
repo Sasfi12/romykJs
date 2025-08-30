@@ -1,10 +1,15 @@
 // DEBUT DARKMODE 
-let darkMode = document.querySelector("#darkMode");
-let allInsideBody = document.body.querySelectorAll("*");
-let allBody = document.querySelector("body");
+const darkMode = document.querySelector("#darkMode");
+const allInsideBody = document.body.querySelectorAll("*");
+const allBody = document.querySelector("body");
+const navOptions = document.querySelectorAll('.nav-link');  
+
 function darkmodetoggle() {
     allBody.classList.toggle("bg-black");
     allBody.classList.toggle("text-white");
+    navOptions.forEach(link => {
+        link.classList.toggle("text-white");
+      });
     document.querySelector(".logos").children[0].classList.toggle("text-white")
     document.querySelector(".logos").children[1].classList.toggle("text-white")
     console.log(darkMode.querySelector("i"));

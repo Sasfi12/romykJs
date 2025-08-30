@@ -10,33 +10,41 @@
 </head>
 
 <body class="text-black position-relative">
-  <nav class="d-flex justify-content-between align-items-center w-100 ps-5 pe-5">
-    <div class="logo-containe w-25 d-flex justify-content-start align-items-center">
-      <img src="public/img/logo.png" alt="logo">
-    </div>
-    <div id="burgeredPart" class="w-100">
-      <div class="nav-elements d-flex gap-5 justify-content-center">
-        <div style="cursor: pointer"><a href="#bigICECREAM" style="text-decoration: none; color: inherit;">Home </a>
-        </div>
-        <div style="cursor: pointer"><a href="#aboutIceCream" style="text-decoration: none; color: inherit;">About </a>
-        </div>
-        <div style="cursor: pointer"><a href="#featuredIceCream"
-            style="text-decoration: none; color: inherit;">Icecream</a></div>
-        <div style="cursor: pointer"><a href="#ourService" style="text-decoration: none; color: inherit;">Services</a>
-        </div>
-        <div style="cursor: pointer"><a href="#testimonials" style="text-decoration: none; color: inherit;">Blog </a>
-        </div>
+  <nav class="navbar navbar-expand-lg px-5">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+      
+      <!-- Left: Logo -->
+      <div id="logo-containe" class="d-flex align-items-center">
+        <a class="navbar-brand" href="#">
+          <img src="public/img/logo.png" alt="logo" class="img-fluid" style="max-height:50px;">
+        </a>
       </div>
-      <div class="logos d-flex justify-content-start">
-        <button class="border-0 btn-outline-primary" id="loginButton">Login <i
-            class="bi bi-person-fill"></i></button><button class="border-0 btn-outline-primary" id="darkMode"><i
-            class="bi bi-moon-fill"></i>
+  
+      <!-- Center: Nav links -->
+      <div class="collapse navbar-collapse justify-content-center" id="burgeredPart">
+        <ul id="nav-elements" class="navbar-nav gap-4">
+          <li class="nav-item"><a class="nav-link" href="#bigICECREAM">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#aboutIceCream">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#featuredIceCream">Icecream</a></li>
+          <li class="nav-item"><a class="nav-link" href="#ourService">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Blog</a></li>
+        </ul>
+      </div>
+  
+      <!-- Right: Buttons -->
+      <div id="logos" class="d-flex gap-2">
+        <button class="btn btn-outline-primary" id="loginButton">
+          Login <i class="bi bi-person-fill"></i>
+        </button>
+        <button class="btn btn-outline-primary" id="darkMode">
+          <i class="bi bi-moon-fill"></i>
         </button>
       </div>
-
-    </div>
-    <div id="bourgir">
-      <span></span><span></span><span></span>
+  
+      <!-- Burger toggler (for mobile) -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#burgeredPart" aria-controls="burgeredPart" aria-expanded="false" aria-label="Toggle navigation" id="bourgir">
+        <span class="navbar-toggler-icon"></span>
+      </button>
     </div>
   </nav>
   <div id="Modals" class="d-flex justify-content-center align-items-center w-100">
